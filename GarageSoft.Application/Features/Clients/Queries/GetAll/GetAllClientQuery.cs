@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using GarageSoft.Application.Contracts.Persistence;
-using GarageSoft.Shared.DTOs;
+using GarageSoft.Shared.DTOs.Client;
 using MediatR;
 using System;
 using System.Collections.Generic;

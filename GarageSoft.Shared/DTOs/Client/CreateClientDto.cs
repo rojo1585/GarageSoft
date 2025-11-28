@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace GarageSoft.Shared.DTOs;
+namespace GarageSoft.Shared.DTOs.Client;
 
 public class CreateClientDto
 {

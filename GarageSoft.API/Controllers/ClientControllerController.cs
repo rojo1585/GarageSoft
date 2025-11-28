@@ -1,6 +1,6 @@
 ﻿using Azure;
 using GarageSoft.Application.Features.Clients.Queries.GetAll;
-using GarageSoft.Shared.DTOs;
+using GarageSoft.Shared.DTOs.Client;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

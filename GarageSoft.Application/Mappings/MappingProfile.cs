@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using GarageSoft.Domain.Entities;
-using GarageSoft.Shared.DTOs;
+using GarageSoft.Shared.DTOs.Client;
 using System;
 using System.Collections.Generic;
 using System.Text;

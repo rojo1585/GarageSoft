@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11205.157 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GarageSoft.Domain", "GarageSoft.Domain\GarageSoft.Domain.csproj", "{8CD3CA9F-F8B5-4D29-A396-5D4B015518A5}"
 EndProject
@@ -100,5 +100,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB24D495-EA2C-4536-A9A0-2F7DF5F4FD8F}
 	EndGlobalSection
 EndGlobal

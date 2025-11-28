@@ -1,0 +1,39 @@
+﻿@page "/client"
+@using GarageSoft.Shared.DTOs.Client
+@using GarageSoft.Shared.DTOs.Services
+@using GarageSoft.Shared.DTOs.Vehicle
+@inject DialogService DialogService
+@inject NotificationService NotificationService
+
+<RadzenLayout Style="height: calc(100vh - 3.5rem);">
+
+    <RadzenHeader>
+        <RadzenStack Class="header-container"
+                     Orientation="Orientation.Horizontal"
+                     AlignItems="AlignItems.Center"
+                     JustifyContent="JustifyContent.SpaceBetween">
+
+            <RadzenStack Orientation="Orientation.Vertical" Gap="0.25rem">
+                <h1 class="page-title">Customers</h1>
+                <p class="page-subtitle">Manage your customer database</p>
+            </RadzenStack>
+
+            <RadzenButton Click=@(args => OnAddCustomer()) Text="Add New" Icon="add_circle" ButtonStyle="ButtonStyle.Primary" />
+        </RadzenStack>
+    </RadzenHeader>
+
+</RadzenLayout>
+
+
+@code {
+    private void OnAddCustomer()
+    {
+        NotificationService.Notify(
+            new NotificationMessage
+            {
+                Severity = NotificationSeverity.Info,
+                Summary = "Button Clicked",
+                Detail = "Opening modal..."
+            });
+    }
+}
