@@ -1,0 +1,81 @@
+﻿<div class="rz-p-4">
+    <RadzenText TextStyle="TextStyle.H4" Class="rz-mb-4" TagName="TagName.H1">
+        <b>Dashboard</b>
+    </RadzenText>
+
+    <RadzenRow Gutter="1rem">
+        <RadzenColumn Size="12" SizeMD="6" SizeLG="3">
+            <RadzenCard Variant="Variant.Outlined" Class="dashboard-card">
+                <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.SpaceBetween" AlignItems="AlignItems.Start">
+                    <RadzenStack Gap="0">
+                        <RadzenText TextStyle="TextStyle.Body1" Class="rz-color-base-500">Clientes Totales</RadzenText>
+                        <RadzenText TextStyle="TextStyle.DisplayH4" Class="rz-mt-2"><b>2</b></RadzenText>
+                    </RadzenStack>
+                    <div class="icon-box" style="background-color: #e3f2fd; color: #1565c0;">
+                        <RadzenIcon Icon="people" />
+                    </div>
+                </RadzenStack>
+            </RadzenCard>
+        </RadzenColumn>
+
+        <RadzenColumn Size="12" SizeMD="6" SizeLG="3">
+            <RadzenCard Variant="Variant.Outlined" Class="dashboard-card">
+                <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.SpaceBetween" AlignItems="AlignItems.Start">
+                    <RadzenStack Gap="0">
+                        <RadzenText TextStyle="TextStyle.Body1" Class="rz-color-base-500">Total Veiculos</RadzenText>
+                        <RadzenText TextStyle="TextStyle.DisplayH4" Class="rz-mt-2"><b>1</b></RadzenText>
+                    </RadzenStack>
+                    <div class="icon-box" style="background-color: #e8f5e9; color: #2e7d32;">
+                        <RadzenIcon Icon="directions_car" />
+                    </div>
+                </RadzenStack>
+            </RadzenCard>
+        </RadzenColumn>
+
+        <RadzenColumn Size="12" SizeMD="6" SizeLG="3">
+            <RadzenCard Variant="Variant.Outlined" Class="dashboard-card">
+                <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.SpaceBetween" AlignItems="AlignItems.Start">
+                    <RadzenStack Gap="0">
+                        <RadzenText TextStyle="TextStyle.Body1" Class="rz-color-base-500">Total Servicios</RadzenText>
+                        <RadzenText TextStyle="TextStyle.DisplayH4" Class="rz-mt-2"><b>0</b></RadzenText>
+                    </RadzenStack>
+                    <div class="icon-box" style="background-color: #f3e5f5; color: #7b1fa2;">
+                        <RadzenIcon Icon="build" />
+                    </div>
+                </RadzenStack>
+            </RadzenCard>
+        </RadzenColumn>
+
+        <RadzenColumn Size="12" SizeMD="6" SizeLG="3">
+            <RadzenCard Variant="Variant.Outlined" Class="dashboard-card">
+                <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.SpaceBetween" AlignItems="AlignItems.Start">
+                    <RadzenStack Gap="0">
+                        <RadzenText TextStyle="TextStyle.Body1" Class="rz-color-base-500">Servicios Pendientes</RadzenText>
+                        <RadzenText TextStyle="TextStyle.DisplayH4" Class="rz-mt-2"><b>0</b></RadzenText>
+                    </RadzenStack>
+                    <div class="icon-box" style="background-color: #fff3e0; color: #ef6c00;">
+                        <RadzenIcon Icon="trending_up" />
+                    </div>
+                </RadzenStack>
+            </RadzenCard>
+        </RadzenColumn>
+
+    </RadzenRow>
+</div>
+
+<style>
+    .icon-box {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+
+    .dashboard-card {
+        border-radius: 12px !important;
+        box-shadow: none !important;
+    }
+</style>

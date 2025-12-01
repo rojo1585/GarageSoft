@@ -21,6 +21,8 @@ public  static class InfraestructureServiceRegistration
 
             source.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             source.AddScoped<IClientRepository, ClientRepository>();
+            source.AddScoped<IVehicleRepository, VehicleRepository>();
+            source.AddScoped<IServiceOrderRepository, ServiceOrderReposity>();
             return source;
         }
     }
