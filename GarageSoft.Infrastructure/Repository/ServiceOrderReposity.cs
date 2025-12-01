@@ -4,6 +4,6 @@ using GarageSoft.Infrastructure.DbContexts;
 
 namespace GarageSoft.Infrastructure.Repository;
 
-public class ServicesReposity(GarageSoftContext _context) : GenericRepository<Service>(_context), IServiceRepository
+public class ServiceOrderReposity(GarageSoftContext _context) : GenericRepository<Service>(_context), IServiceOrderRepository
 {
 }

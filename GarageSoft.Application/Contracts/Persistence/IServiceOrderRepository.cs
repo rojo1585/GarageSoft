@@ -2,6 +2,6 @@
 
 namespace GarageSoft.Application.Contracts.Persistence;
 
-public interface IServiceRepository: IGenericRepository<Service>
+public interface IServiceOrderRepository: IGenericRepository<Service>
 {
 }
