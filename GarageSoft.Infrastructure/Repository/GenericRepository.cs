@@ -19,11 +19,10 @@ public class GenericRepository<T>(GarageSoftContext context) : IGenericRepositor
     public async Task<T?> GetByIdAsync(Guid id) =>
         await _context.Set<T>().FindAsync(id);
 
-    public async Task<T> AddAsync(T entity) 
+    public async Task<int> AddAsync(T entity) 
     {
         await _context.Set<T>().AddAsync(entity);
-        await _context.SaveChangesAsync();
-        return entity;
+        return await _context.SaveChangesAsync();
     }
 
     public async Task DeleteAsync(T entity)

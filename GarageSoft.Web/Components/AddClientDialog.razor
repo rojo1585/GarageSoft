@@ -1,0 +1,37 @@
+﻿@using GarageSoft.Shared.DTOs.Client
+@inject Radzen.DialogService DialogService
+
+<RadzenTemplateForm Data="@model" Submit="@((CreateClientDto args) => OnSubmit(args))">
+    <RadzenStack Gap="1.5rem">
+
+        <RadzenFormField Text="Nombre Completo" Variant="Variant.Outlined">
+            <RadzenTextBox @bind-Value="model.Name" Name="Name" style="width: 100%;" />
+            <RadzenRequiredValidator Component="Name" Text="El nombre es obligatorio" Popup="true" />
+        </RadzenFormField>
+
+        <RadzenFormField Text="Teléfono" Variant="Variant.Outlined">
+            <RadzenTextBox @bind-Value="model.Phone" Name="Phone" style="width: 100%;" />
+            <RadzenRequiredValidator Component="Phone" Text="El teléfono es obligatorio" Popup="true" />
+        </RadzenFormField>
+
+        <RadzenFormField Text="Correo Electrónico" Variant="Variant.Outlined">
+            <RadzenTextBox @bind-Value="model.Email" Name="Email" style="width: 100%;" />
+            <RadzenEmailValidator Component="Email" Text="Formato de correo inválido" Popup="true" />
+        </RadzenFormField>
+
+        <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.End" Gap="1rem" Class="rz-mt-4">
+            <RadzenButton ButtonStyle="ButtonStyle.Light" Text="Cancelar" Click="@(() => DialogService.Close(null))" />
+            <RadzenButton ButtonType="ButtonType.Submit" ButtonStyle="ButtonStyle.Primary" Text="Guardar" Icon="save" />
+        </RadzenStack>
+
+    </RadzenStack>
+</RadzenTemplateForm>
+
+@code {
+    CreateClientDto model = new CreateClientDto();
+
+    void OnSubmit(CreateClientDto clientData)
+    {
+        DialogService.Close(clientData);
+    }
+}
